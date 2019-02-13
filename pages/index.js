@@ -6,6 +6,7 @@ class Store {
   @observable show = true;
 
   @action toggleShow = () => this.show = !this.show;
+
   @computed get getShow() {
     return this.show;
   }
@@ -27,12 +28,14 @@ class TestMobX extends Component {
   }
 
   render() {
+    const a = 1;
+
     return (
       <div>
         <button type="button" onClick={this.onclick}>Click Me!</button>
         <p>{this.props.store.getShow && 'Hello Next.js@7 with MobX.'}</p>
       </div>
-    )
+    );
   }
 }
 

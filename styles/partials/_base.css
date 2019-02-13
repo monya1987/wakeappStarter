@@ -1,0 +1,283 @@
+/*need cleer this file*/
+
+@font-face {
+  font-family: 'sf_ui_textlight';
+  src: url('../../fonts/cabinet/_v2/sfuitext-light.woff2') format('woff2'),
+  url('../../fonts/cabinet/_v2/sfuitext-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'sf_ui_textmedium';
+  src: url('../../fonts/cabinet/_v2/sfuitext-medium.woff2') format('woff2'),
+  url('../../fonts/cabinet/_v2/sfuitext-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'sf_ui_textregular';
+  src: url('../../fonts/cabinet/_v2/sfuitext-regular.woff2') format('woff2'),
+  url('../../fonts/cabinet/_v2/sfuitext-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'sf_ui_textsemibold';
+  src: url('../../fonts/cabinet/_v2/sfuitext-semibold.woff2') format('woff2'),
+  url('../../fonts/cabinet/_v2/sfuitext-semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sf_ui_textbold';
+  src: url('../../fonts/cabinet/_v2/sfuitext-bold.woff2') format('woff2'),
+  url('../../fonts/cabinet/_v2/sfuitext-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sf_ui_textitalic';
+  src: url('../../fonts/cabinet/_v2/sfuitext-italic.woff2') format('woff2'),
+  url('../../fonts/cabinet/_v2/sfuitext-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: 400;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*** params ***/
+
+$colorDefault: #000;
+
+$colorLinkDefault: #464646;
+
+$colorBtn: #fff;
+
+$orangeBtn: #f7a935;
+
+$hoverBg: #94e16d;
+
+/*** styles ***/
+
+a {
+  color: $colorLinkDefault;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+html {
+  height: auto;
+  position: fixed;
+  width: 100%;
+}
+
+body {
+  background: #fafbfc;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: $colorDefault;
+  font-family: 'sf_ui_textregular', Helvetica, Verdana, Arial, sans-serif;
+}
+
+button {
+  font-family: 'sf_ui_textregular', Helvetica, Verdana, Arial, sans-serif;
+}
+
+.box {
+  margin: 0 0 30px 0;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 3, 1, 0.07);
+}
+
+.btn {
+  font-size: 14px;
+  line-height: 1em;
+  color: $colorBtn;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: all .3s ease-out;
+    left: 0;
+  }
+  &::after {
+    width: 0;
+    background: $hoverBg;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.orangeBtn {
+  &::before {
+    width: 100%;
+    background: #f7a935;
+  }
+}
+
+.btnSizeSmall {
+  border-radius: 13px;
+  font-size: 13px;
+  padding: 3px 13px 6px;
+  &::after {
+    border-radius: 13px;
+  }
+}
+
+.aLeft {
+  text-align: left;
+}
+
+.aRight {
+  text-align: right;
+}
+
+.aCenter {
+  text-align: center;
+}
+
+.flexRow {
+  display: flex;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.iconTitle {
+  font-size: 21px;
+  margin-top: -6px;
+  color: #7532a4;
+  margin-right: 10px;
+}
+
+input[type='text'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='password'],
+input[type='email'] {
+  height: 40px;
+  background-color: #f5f7f9;
+  border: 1px solid #edf0f3;
+  border-radius: 2px;
+  color: #444;
+  font-size: 14px;
+  padding: 0 10px;
+  outline: none;
+  transition: all .3s ease-in-out;
+  &:focus {
+    border-color: #39b5e4;
+  }
+}
+
+mark {
+  background: #e5e5e5;
+}
+
+.strong {
+  font-weight: normal;
+  font-family: 'sf_ui_textbold', Helvetica, Verdana, Arial, sans-serif;
+}
+
+.semibold {
+  font-weight: normal;
+  font-family: 'sf_ui_textsemibold', Helvetica, Verdana, Arial, sans-serif;
+}
+
+.light {
+  font-weight: normal;
+  font-family: 'sf_ui_textlight', Helvetica, Verdana, Arial, sans-serif;
+}
+
+.italic {
+  font-weight: normal;
+  font-family: 'sf_ui_textitalic', Helvetica, Verdana, Arial, sans-serif;
+}

@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/fonts/cabinet/_v2/fonticon/icomoon.eot?1o50o4');
+  src:  url('/fonts/cabinet/_v2/fonticon/icomoon.eot?1o50o4#iefix') format('embedded-opentype'),
+  url('/fonts/cabinet/_v2/fonticon/icomoon.ttf?1o50o4') format('truetype'),
+  url('/fonts/cabinet/_v2/fonticon/icomoon.woff?1o50o4') format('woff'),
+  url('/fonts/cabinet/_v2/fonticon/icomoon.svg?1o50o4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"], [data-icon]{
+  /* use !important to prevent issues with browser extensions that change /fonts/cabinet/icomoon */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-warning:before {
+  content: "\e92a";
+}
+.icon-maestro:before {
+  content: "\e92b";
+}
+.icon-mastercard:before {
+  content: "\e929";
+}
+.icon-visa:before {
+  content: "\e928";
+}
+.icon-coupon:before {
+  content: "\e932";
+}
+.icon-chevron-right:before {
+  content: "\e927";
+}
+.icon-aso-green:before {
+  content: "\e92c";
+}
+.icon-graph:before {
+  content: "\e931";
+}
+.icon-positions:before {
+  content: "\e92e";
+}
+.icon-query:before {
+  content: "\e92f";
+}
+.icon-reviews:before {
+  content: "\e92d";
+}
+.icon-search-green:before {
+  content: "\e930";
+}
+.icon-dislike:before {
+  content: "\e921";
+  color: #cfcfcf;
+}
+.icon-filter:before {
+  content: "\e922";
+  color: #744097;
+}
+.icon-like:before {
+  content: "\e923";
+  color: #cfcfcf;
+}
+.icon-download2:before {
+  content: "\e920";
+  color: #744097;
+}
+.icon-logo-big-bottom:before {
+  content: "\e91d";
+}
+.icon-logo-big-top:before {
+  content: "\e91e";
+}
+.icon-logo:before {
+  content: "\e91f";
+}
+.icon-review:before {
+  content: "\e91c";
+}
+.icon-sq-minus:before {
+  content: "\e91a";
+}
+.icon-sq-plus:before {
+  content: "\e91b";
+}
+.icon-profile:before {
+  content: "\e917";
+}
+.icon-share:before {
+  content: "\e918";
+}
+.icon-minus-symbol:before {
+  content: "\e916";
+}
+.icon-purse:before {
+  content: "\e915";
+}
+.icon-points:before {
+  content: "\e914";
+}
+.icon-shape:before {
+  content: "\e910";
+}
+.icon-chevrondown:before {
+  content: "\e911";
+}
+.icon-chevronup:before {
+  content: "\e912";
+}
+.icon-tick:before {
+  content: "\e913";
+}
+.icon-close:before {
+  content: "\e90f";
+}
+.icon-down:before {
+  content: "\e90b";
+}
+.icon-download:before {
+  content: "\e90c";
+}
+.icon-equally:before {
+  content: "\e90d";
+}
+.icon-up:before {
+  content: "\e90e";
+}
+.icon-competitor:before {
+  content: "\e903";
+}
+.icon-recommend:before {
+  content: "\e908";
+  color: #b685d7;
+}
+.icon-analytic:before {
+  content: "\e900";
+}
+.icon-apple:before {
+  content: "\e901";
+}
+.icon-chevron:before {
+  content: "\e902";
+}
+.icon-dashboard:before {
+  content: "\e904";
+}
+.icon-google-play:before {
+  content: "\e905";
+}
+.icon-history:before {
+  content: "\e906";
+}
+.icon-plus:before {
+  content: "\e907";
+}
+.icon-search:before {
+  content: "\e909";
+}
+.icon-settings:before {
+  content: "\e90a";
+}
+.icon-explore:before {
+  content: "\e919";
+}
+.icon-notification:before {
+  content: "\ea08";
+}
+.icon-delete:before {
+  content: "\e924";
+}
+.icon-lock:before {
+  content: "\e925";
+}
+.icon-eye:before {
+  content: "\e926";
+}
+.icon-delete:before {
+  content: "\e924";
+}
+.icon-lock:before {
+  content: "\e925";
+}

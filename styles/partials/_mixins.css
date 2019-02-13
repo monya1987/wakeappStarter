@@ -1,0 +1,64 @@
+@mixin bb() {
+  background: orange !important;
+}
+
+@mixin custom-breakpoint($maxWidth) {
+  @media screen and (max-width: $maxWidth) {
+    @content
+  }
+}
+
+@mixin small-mobile-breakpoint() {
+  @media screen and (max-width: 640px) {
+    @content
+  }
+}
+
+@mixin mobile-breakpoint() {
+  @media screen and (max-width: 767px) {
+    @content
+  }
+}
+
+@mixin tablet-breakpoint() {
+  @media screen and (max-width: 960px) {
+    @content
+  }
+}
+
+@mixin tablet-portrait-breakpoint() {
+  @media screen and (max-width: 860px) {
+    @content
+  }
+}
+
+@mixin small-screen() {
+  @media screen and (max-width: 1024px) {
+    @content
+  }
+}
+
+@mixin medium-screen() {
+  @media screen and (max-width: 1300px) {
+    @content
+  }
+}
+
+@mixin tablet-portrait-breakpoint-inverse() {
+  @media screen and (min-width: 860px) {
+    @content
+  }
+}
+
+@mixin h-line-height($h) {
+  height: $h;
+  line-height: $h;
+}
+
+@mixin elipsis($isNowrap) {
+  text-overflow: ellipsis;
+  @if ($isNowrap) {
+    white-space: nowrap;
+  }
+}
+

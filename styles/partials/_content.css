@@ -1,0 +1,11 @@
+.cabinet-content {
+  display: flex;
+  min-height: 100%;
+  flex: 1;
+}
+
+.cabinet-center {
+  background: #f2f6fa;
+  display: flex;
+  flex: 1;
+}

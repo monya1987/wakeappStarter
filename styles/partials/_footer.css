@@ -1,0 +1,116 @@
+/*** Params ***/
+$bgDefaultFooter: #f2f6fa;
+
+$colorSocialLinks: #fff;
+
+$bgSocialsFb: #4867aa;
+
+$socialsHover: #39b5e4;
+
+$colorCopyright: #b8b4d4;
+
+$colorCopyrightHover: #fff;
+
+$colorFooterList: #444;
+
+$colorFooterListHover: #39b5e4;
+
+/*** Styles ***/
+
+
+.footer {
+  background: $bgDefaultFooter;
+  display: flex;
+}
+
+
+.footerSidebar {
+  width: 256px;
+  background: #444256;
+  display: flex;
+  flex-direction: column;
+}
+
+.socials {
+  li {
+    padding-bottom: 10px;
+  }
+  a {
+    display: block;
+    color: $colorSocialLinks;
+    font-size: 14px;
+    line-height: 45px;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    padding: 0 50px;
+    font-family: 'SegoeUISemiBold';
+    position: relative;
+    text-align: center;
+    span {
+      position: absolute;
+      top: 50%;
+      margin-top: -6px;
+      left: 35px;
+      font-size: 13px;
+    }
+    &:hover {
+      background: $socialsHover;
+    }
+  }
+}
+
+.socialsFb {
+  background-color: $bgSocialsFb;
+}
+
+.copyright {
+  margin: auto;
+  padding-bottom: 10px;
+  color: $colorCopyright;
+  text-align: center;
+  font-family: 'SegoeUILight';
+  font-size: 14px;
+  line-height: 1.4em;
+  span {
+    display: block;
+    padding-bottom: 10px;
+  }
+  a {
+    transition: all .3s ease-out;
+    color: $colorCopyright;
+    &:hover {
+      color: $colorCopyrightHover;
+    }
+  }
+}
+
+.footerList {
+  padding: 35px 0;
+  flex: 1 0 0;
+  width: calc(100% - 256px);
+  ul {
+    width: 33%;
+  }
+  li {
+    padding: 10px 0;
+  }
+  a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.3em;
+    font-family: 'SegoeUISemiBold';
+    color: $colorFooterList;
+    transition: all .3s ease-out;
+    text-decoration: none;
+    &:hover {
+      color: $colorFooterListHover;
+      text-decoration: underline;
+    }
+  }
+  &.active {
+    a {
+      color: $colorFooterListHover;
+      text-decoration: underline;
+    }
+  }
+}
